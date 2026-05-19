@@ -142,6 +142,7 @@ nav .right .btn2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow-x: scroll;
 }
 .filter_btn1{
     background-color: transparent;
@@ -160,6 +161,7 @@ nav .right .btn2{
     display: flex;
     align-items: center;
     gap: 30px;
+    overflow-x: scroll;
 }
 .filter_links p{
     font-weight: 600;
@@ -188,8 +190,8 @@ nav .right .btn2{
 }
 .card{
     height: 270px;
-    /* width: 23.9%; */
-    width: 22%;
+    width: 23.9%;
+    /* width: 22%; */
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -217,6 +219,7 @@ nav .right .btn2{
 .overlay{
     display: flex;
     align-items: center;
+    justify-content: space-between;
       position: absolute;
       left: 0;
       bottom: -100%;
@@ -253,7 +256,6 @@ nav .right .btn2{
       transform: scale(1.2);
     }
 
-    /* Hover Effects */
     .img_container:hover .overlay{
       bottom: 0;
     }
@@ -404,4 +406,18 @@ footer .bottom .right{
 }
 footer .bottom .right p{
     font-size: 14px;
+}
+
+@media (max-width:1024px){
+    .card{
+        width: 48%;
+    }
+    .filter_bar{
+        gap: 20px;
+    }
+}
+@media (max-width:724px){
+    .card{
+        width: 100%;
+    }
 }
